@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AD_list</title>
+  <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <!-- navigation -->
+  <nav class="sidebar">
+    <div class="sidebar__home"></div>
+    <div class="sidebar__menu">
+      <div class="sidebar__menu__link sidebar__menu__link--frame sidebar__menu__link--active">
+        <img
+          src="https://raw.githubusercontent.com/WendellLiu/alphacamp-frontend-course/master/data-table/static/icons/frame.svg"
+          alt="frame" />
+      </div>
+      <div class="sidebar__menu__link sidebar__menu__link--folder">
+        <img
+          src="https://raw.githubusercontent.com/WendellLiu/alphacamp-frontend-course/master/data-table/static/icons/folder.svg"
+          alt="folder" />
+      </div>
+      <div class="sidebar__menu__link sidebar__menu__link--mail">
+        <img
+          src="https://raw.githubusercontent.com/WendellLiu/alphacamp-frontend-course/master/data-table/static/icons/mail.svg"
+          alt="mail" />
+      </div>
+      <div class="sidebar__menu__link">
+        <label class="sidebar__darkmode__label" for="dark__mode__toggle"></label>
+        <input type="checkbox" class="sidebar__darkmode__input" id="dark__mode__toggle" />
+      </div>
+    </div>
+  </nav>
+  <!-- partial templates will replace the part of "body" here -->
+  {{{ body }}}
+  <script src="/javascripts/index.js"></script>
+  <script src="/javascripts/jquery-3.6.0.min.js"></script>
+  <script src="/javascripts/popper.js"></script>
+  <script src="/javascripts/bootstrap.js"></script>
+</body>
+
+</html>
